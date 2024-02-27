@@ -1,0 +1,144 @@
+/*#region screen independent*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap');
+
+
+
+body {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'Varela Round';
+    margin: 0;
+    direction: rtl;
+}
+
+h1 {
+    font-family: Satisfy;
+    text-shadow: 0px 0px 36px #00000087;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Varela Round';
+}
+
+body, h1, h2, p {
+    color: white;
+    font-weight: normal;
+}
+
+input[type="text"], input[type="email"] {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+
+}
+
+
+.button {
+    font-size: 16px;
+    font-family: 'Varela Round';
+    background: white;
+    border: none;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.input-wrapper {
+    text-align: right;
+    display: inline-block;
+}
+
+/*#endregion*/
+
+/*#region computer screen*/
+
+@media screen and (min-width: 700px) {
+
+
+    h1 {
+        font-size: 160px;
+    }
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 1100px;
+        height: 407px;
+
+    }
+
+
+    input[type="text"], input[type="email"] {
+        width: 418px;
+        height: 50px;
+    }
+
+    .button {
+        width: 206px;
+        height: 50px;
+    }
+}
+
+/*#endregion*/
+
+/*#region smartphone screen*/
+
+@media screen and (max-width: 700px) {
+
+    .wrapper {
+        margin-top: 90px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        width: 318px;
+        display: inline-block;
+    }
+
+    input[type='text'], input[type='email'], .button {
+        width: 302px;
+        height: 36px;
+    }
+
+    .form-wrapper {
+        margin-top: 23px;
+    }
+
+    .email-wrapper {
+        margin-top: 14px;
+    }
+
+    .button {
+        margin-top: 17px;
+    }
+
+}
+
+/*#endregion*/

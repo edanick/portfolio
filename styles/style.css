@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.tech-icon {
+  width: 64px;
+  margin: 0 16px;
+}
+
+.button {
+  padding: 8px;
+  background: #1AE0EC;
+  color: #282828;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  user-select: none;
+  text-decoration: none;
+  display: block;
+}
+.button:hover {
+  background: #18bcc5;
+  color: #080808;
+}
+
+.top-bar {
+  justify-content: space-between;
+  display: flex;
+  box-shadow: 0 0 0 1px lightgray;
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  z-index: 9999;
+  box-sizing: border-box;
+}
+.top-bar a > .logo {
+  height: 64px;
+}
+.top-bar > nav {
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.top-bar > nav > a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px;
+  margin: 12px;
+  user-select: none;
+  background: white;
+  box-sizing: border-box;
+}
+.top-bar > nav > a:hover {
+  color: red;
+}
+
+.hamburger {
+  display: none;
+  height: 32px;
+  margin-top: 16px;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  margin-top: 64px;
+}
+main > section {
+  width: 100%;
+  min-height: 740px;
+  display: inline-block;
+}
+main .section-1 {
+  display: flex;
+}
+main .section-1 > div {
+  width: 50%;
+}
+
+.avatar {
+  height: 96%;
+  border-radius: 50%;
+  position: relative;
+  top: 2%;
+  float: right;
+}
+
+.contact-text-area {
+  width: 700px;
+  height: 300px;
+  border-radius: 4px;
+}
+
+footer {
+  height: 80px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border-radius: 4px;
+  background: #F2F2F2;
+  border: none;
+  margin: 2px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+#titleInput {
+  width: 700px;
+}
+
+#container-gallery {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+
+.card {
+  box-shadow: 0 0 0 1px lightgray;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  border-radius: 4px;
+  margin: 2em;
+  background: white;
+  text-align: center;
+}
+
+.card p {
+  height: 46px;
+  display: inline-block;
+}
+
+.bg-image {
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px 4px 0 0;
+}
+
+.bg-image-1 {
+  background-image: url("../images/projects/1.png");
+}
+
+.bg-image-2 {
+  background-image: url("../images/projects/2.png");
+}
+
+.bg-image-3 {
+  background-image: url("../images/projects/3.png");
+}
+
+.bg-image-4 {
+  background-image: url("../images/projects/4.png");
+}
+
+.bg-image-5 {
+  background-image: url("../images/projects/5.png");
+}
+
+.bg-image-6 {
+  background-image: url("../images/projects/6.png");
+}
+
+#projectImgDiv {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1280px;
+  height: 720px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 700px) {
+  .avatar {
+    height: 148px;
+    float: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .avatar-2 {
+    width: 100%;
+  }
+  .top-bar > nav {
+    left: 0;
+    top: 64px;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+  }
+  .top-bar > nav > a {
+    margin: 0;
+    width: 100%;
+    padding: 16px;
+    display: block;
+  }
+  .contact-text-area,
+  input[type=text],
+  input[type=number],
+  input[type=email],
+  #titleInput {
+    width: calc(100% - 4px);
+  }
+  .card {
+    width: calc(100% - 2em);
+    margin: 1em 0 1em 0;
+    text-align: left;
+    display: inline-block;
+  }
+  #container-gallery {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  #projectImgDiv {
+    width: 100%;
+    height: 260px;
+  }
+  .project-section-3 {
+    min-height: 260px;
+  }
+  main > section {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  main .section-1 {
+    display: inline-block;
+  }
+  main .section-1 > div {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

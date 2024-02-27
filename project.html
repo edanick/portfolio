@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edan's Portfolio | Title Project</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/profile.png" type="image/x-icon">
+    <script src="./scripts/index.js" defer></script>
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <a href="./index.html"><img class="logo" src="./images/logo.png" /></a>
+    </header>
+
+    <main>
+
+        <section style="text-align: center; min-height: 400px; background: #96E6EC">
+            <h1 id="projectTitleH1" style="font-size: 4em;"></h1>
+            <p id="descriptionP"></p>
+            <a id="downloadBtn" style="display: inline-block;" class="button" href="./downloads/projects/$n.zip"
+                download>Download Project</a>
+            <a id="viewBtn" style="display: inline-block;" class="button" href="./projects/$n/index.html">View
+                Project</a>
+        </section>
+
+        <section id="technologiesSection" style="text-align: center; min-height: 64px; padding: 16px 0; box-shadow: 0 0 0 1px lightgray;">
+        </section>
+
+        <section class="project-section-3" style="text-align: center; padding: 64px; box-sizing: border-box">
+            <div id="projectImgDiv"></div>
+        </section>
+
+    </main>
+
+
+    <footer style="background: #F2F2F2;">
+        Copyright © year by Edan | All Rights Reserved
+    </footer>
+
+
+
+    <script>
+
+        const projects = [
+            {
+                title: 'Coffee',
+                description: 'Some promotion for a coffee brand.',
+                technologies: ["html", "css"]
+            },
+            {
+                title: 'Let us lead you forward',
+                description: "Recuritment form",
+                technologies: ["html", "css"]
+            },
+            {
+                title: "Discover the world",
+                description: "Share us about your travel experience",
+                technologies: ["html", "css", "sass"]
+            },
+            {
+                title: "Free counseling",
+                description: "Leave your phone number to get contacted by a professional",
+                technologies: ["html", "css"]
+            },
+            {
+                title: "Think outside of the box",
+                description: "Leave your phone number to get contacted by a professional.",
+                technologies: ["html", "css"]
+            },
+            {
+                title: "Here & Now",
+                description: "We wanted to make you enjoy from a selection of many gifts",
+                technologies: ["html", "css"]
+            }
+        ],
+
+            n = parseInt(new URLSearchParams(window.location.search).get('n')),
+
+            project = projects[n - 1];
+
+        if ((n >= 1 && n <= 6)) {
+            //redirect to 404 page location.href = 'some page' i am not really gonna make 1 right now
+        }
+
+        document.title = document.title.replace('Title', project.title)
+
+        projectTitleH1.innerHTML = project.title;
+        descriptionP.innerHTML = project.description;
+        projectImgDiv.style.backgroundImage = `url('./images/projects/${n}.png')`;
+        downloadBtn.href = downloadBtn.href.replace('$n', n);
+        viewBtn.href = viewBtn.href.replace('$n', n);
+
+
+        for (let technology of project.technologies) {
+            technologiesSection.innerHTML += ` <img class="tech-icon" src="./images/tech-icons/${technology}.png">`;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

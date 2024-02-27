@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo');
+
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: 'Heebo';
+    color: #020253;
+}
+
+main {
+    height: 100%;
+}
+
+
+h1,
+p,
+label {
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 43px;
+}
+
+p {
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    background: #E5EEFF;
+    border: none;
+    height: 50px;
+    width: 417.5px;
+    font-size: 22px;
+    border-bottom: solid 4px #020253;
+}
+
+input[type="submit"] {
+    border: none;
+    background: #020253;
+    color: white;
+    width: 166px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.image-div {
+    width: 56%;
+    height: 100%;
+    background: url('../images/coffee.png');
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.form-div {
+    width: 44%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.form-main-content {
+    display: inline-block;
+    text-align: right;
+    top: 25%;
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+
+
+    .image-div {
+        display: block;
+        width: 100%;
+        height: 219px;
+    }
+
+    .form-div {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 47px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    .form-main-content {
+        top: 0;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+
+        width: 286px;
+        height: 34px;
+    }
+
+    input[type="submit"] {
+        width: 286px;
+        height: 34px;
+    }
+
+
+
+}

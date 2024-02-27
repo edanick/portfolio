@@ -1,0 +1,366 @@
+/*#region screen independent*/
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+:root {
+  --ctw: 296px;
+  --cth: 271px;
+  --cgap: 20px;
+  --ptw: 159px;
+  --pth: 145px;
+  --pgap: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+.img-tile {
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  color: #0EE1DA;
+}
+
+body {
+  font-family: "Assistant";
+}
+
+h2,
+p {
+  color: white;
+}
+
+p {
+  display: inline-block;
+}
+
+h2 {
+  display: inline-block;
+}
+
+.form-wrapper {
+  text-align: right;
+  display: inline-block;
+}
+
+label {
+  font-family: "Heebo";
+  color: #0EE1DA;
+  font-weight: bold;
+}
+
+input[type=text],
+input[type=email] {
+  border: none;
+  background: #E5EEFF;
+  direction: rtl;
+}
+
+.button {
+  background: #0EE1DA;
+  color: #011560;
+  border: none;
+  cursor: pointer;
+  font-family: "Heebo";
+}
+
+textarea {
+  resize: none;
+  background: #E5EEFF;
+  direction: rtl;
+}
+
+.tile-1 > div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
+/*#region image tiles */
+.img-tile-1 {
+  background-image: url("../images/1.png");
+}
+
+.img-tile-2 {
+  background-image: url("../images/2.png");
+}
+
+.img-tile-3 {
+  background-image: url("../images/3.png");
+}
+
+.img-tile-4 {
+  background-image: url("../images/4.png");
+}
+
+.img-tile-5 {
+  background-image: url("../images/5.png");
+}
+
+.img-tile-6 {
+  background-image: url("../images/6.png");
+}
+
+.img-tile-7 {
+  background-image: url("../images/7.png");
+}
+
+.img-tile-8 {
+  background-image: url("../images/8.png");
+}
+
+.img-tile-9 {
+  background-image: url("../images/9.png");
+}
+
+.img-tile-10 {
+  background-image: url("../images/10.png");
+}
+
+.img-tile-11 {
+  background-image: url("../images/11.png");
+}
+
+.img-tile-12 {
+  background-image: url("../images/12.png");
+}
+
+.img-tile-13 {
+  background-image: url("../images/13.png");
+}
+
+.img-tile-14 {
+  background-image: url("../images/14.png");
+}
+
+/*#endregion*/
+/*#region tiles */
+.tile-1 {
+  background: #020253;
+}
+
+.tile-2 {
+  background: #8E097C;
+}
+
+/*#endregion*/
+/*#endregion*/
+/*#region computer screen*/
+@media screen and (min-width: 700px) {
+  main {
+    text-align: center;
+  }
+  .container {
+    width: calc(var(--ctw) * 4 + var(--cgap) * 3);
+    position: relative;
+    display: inline-block;
+    margin: 298px 0 266px 0;
+  }
+  h1 {
+    font-size: 61px;
+    margin: 0;
+  }
+  h2 {
+    margin: 63px 0 23px 0;
+    font-size: 35px;
+  }
+  p {
+    width: 475px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .form-wrapper {
+    margin-top: 71px;
+  }
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  input[type=text],
+  input[type=email] {
+    width: 500px;
+    height: 60px;
+  }
+  input[type=text],
+  input[type=email],
+  textarea {
+    border-bottom: solid 5px #0EE1DA;
+  }
+  .email-wrapper {
+    margin-top: 30px;
+  }
+  .textarea-wrapper {
+    margin-top: 30px;
+  }
+  textarea {
+    width: 500px;
+    height: 172px;
+  }
+  .button {
+    width: 501px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /*#region divs*/
+  .tile-1 {
+    width: calc(var(--ctw) * 2 + var(--cgap));
+    height: calc(var(--cth) * 2 + var(--cgap));
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .tile-2 {
+    width: calc(var(--ctw) * 2 + var(--cgap));
+    height: calc(var(--cth) * 3 + var(--cgap) * 2);
+    margin-top: var(--cgap);
+  }
+  /*#endregion*/
+  /*#region grids*/
+  .grid-1 {
+    display: grid;
+    grid-template-rows: repeat(3, var(--cth));
+    grid-template-columns: repeat(4, var(--ctw));
+    gap: var(--cgap);
+  }
+  .grid-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: repeat(3, var(--cth));
+    grid-template-columns: repeat(2, var(--ctw));
+    gap: var(--cgap);
+  }
+  /*#endregion*/
+  /*#region image tiles*/
+  .img-tile-3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .img-tile-4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .img-tile-5 {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  .img-tile-6 {
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+  .img-tile-7 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .img-tile-8 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  /*#endregion*/
+}
+/*#endregion*/
+/*#region smartphone screen*/
+@media screen and (max-width: 700px) {
+  .container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /*#region divs*/
+  .tile-1 {
+    width: 100%;
+    height: 340px;
+  }
+  .tile-2 {
+    width: calc(var(--ptw) * 2 + var(--pgap));
+    display: inline-block;
+    height: 518px;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 25px 0 14px 0;
+  }
+  label {
+    font-size: 7px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .email-wrapper {
+    margin-top: 17px;
+  }
+  .textarea-wrapper {
+    margin-top: 17px;
+  }
+  .form-wrapper {
+    margin-top: 30px;
+  }
+  input[type=text],
+  input[type=email],
+  textarea {
+    border-bottom: solid 3px #0EE1DA;
+  }
+  .tile-1 p {
+    width: 287px;
+    height: 78px;
+    font-size: 20px;
+  }
+  .tile-2 p {
+    font-size: 15px;
+    font-weight: normal;
+    width: 278px;
+    height: 38px;
+  }
+  input[type=text],
+  input[type=email] {
+    width: 278px;
+    height: 33px;
+  }
+  textarea {
+    width: 278px;
+    height: 96px;
+  }
+  .button {
+    width: 278px;
+    height: 33px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  /*#endregion*/
+  /*#region grids*/
+  .grid-1-wrapper {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .grid-2-wrapper {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .grid-1 {
+    display: grid;
+    grid-template-rows: repeat(4, var(--pth));
+    grid-template-columns: repeat(2, var(--ptw));
+    gap: var(--pgap);
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-rows: repeat(3, var(--pth));
+    grid-template-columns: repeat(2, var(--ptw));
+    gap: var(--pgap);
+  }
+  /*#endregion*/
+}
+/*#endregion*/
+
+/*# sourceMappingURL=index.css.map */

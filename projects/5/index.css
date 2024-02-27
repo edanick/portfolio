@@ -1,0 +1,451 @@
+/*#region screen independent*/
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+:root {
+    --primary-background-color: #0EE1E1;
+    --secondary-background-color: #F0FFFF;
+}
+
+body {
+    margin: 0;
+    direction: rtl;
+}
+
+body, h1, p, label {
+    font-family: Heebo;
+}
+
+.section-1 {
+    height: 634px;
+    background: var(--primary-background-color);
+}
+
+.section-2 {
+    height: 445px;
+}
+
+.card {
+    width: 450px;
+    height: 329px;
+    background: #F8F8F8;
+    text-align: center;
+}
+
+.card p {
+    display: inline-block;
+}
+
+.left-div {
+    background: var(--secondary-background-color);
+    height: 100%;
+}
+
+.right-div {
+    background: var(--primary-background-color);
+}
+
+h2 {
+    color: #090909;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background: #E5EEFF;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.map {
+    background-image: url('./images/map.png');
+    background-size: cover;
+}
+
+footer {
+    height: 202px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    background: var(--primary-background-color);
+    display: inline-block;
+    margin: 0 19px;
+    position: relative;
+    box-shadow: 0px 3px 6px #00000029;
+    cursor: pointer;
+}
+
+.circle i, .circle img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.circles-wrapper {
+    display: inline-block
+}
+
+.bottom-line {
+    width: 100%;
+    height: 19px;
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-background-color);
+}
+
+
+.button {
+    background: var(--primary-background-color);
+    border: none;
+    cursor: pointer;
+}
+
+
+.whatapp {
+    background: white;
+    top: 65;
+    left: 65;
+
+    position: absolute;
+}
+
+.linkedin-icon {
+    background: url('./images/icons/linked-in.png');
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*#endregion*/
+
+
+
+/*#region computer screen*/
+
+@media screen and (min-width: 700px) {
+
+
+    .box-img {
+
+        top: 183px;
+        right: 150px;
+        position: absolute;
+    }
+
+    .section-1-content-wrapper {
+        top: 183px;
+        right: 657px;
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 66px;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 46px;
+        font-weight: 900;
+        margin: 84px 0 11px 0;
+
+    }
+
+    .card img {
+        width: 44px;
+        margin-top: 75px;
+    }
+
+    .card h1 {
+        color: var(--primary-background-color);
+        font-weight: 900;
+        font-size: 30px;
+        margin: 29px 0 6px 0;
+    }
+
+    .card p {
+        width: 293px;
+    }
+
+    .section-3 {
+        height: 939px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .left-div {
+        width: 44%;
+    }
+
+    .right-div {
+        width: 56%;
+    }
+
+    label {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 426px;
+        height: 51px;
+        border-bottom: solid 4px var(--primary-background-color);
+    }
+
+    textarea {
+        width: 426px;
+        height: 145px;
+        border-bottom: solid 4px var(--primary-background-color);
+
+    }
+
+    .left-div p {
+        font-size: 15px;
+        width: 403px;
+    }
+
+    .name-wrapper, .email-wrapper, .message-wrapper {
+        margin-top: 20px;
+    }
+
+    .button {
+        margin-top: 24px;
+        width: 427px;
+        height: 51px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .left-div-content-wrapper {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .left-div {
+        text-align: center;
+    }
+
+    .linkedin-icon {
+        width: 31.5px;
+        height: 31.5px;
+    }
+
+    .section-1 p {
+        font-size: 20px;
+        width: 787px;
+    }
+
+    .right-div {
+        position: relative;
+    }
+
+    .map {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 86%;
+        height: 82%;
+    }
+
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 46px;
+    }
+
+    .circles-wrapper {
+        margin-top: 49px;
+    }
+
+}
+
+/*#endregion*/
+
+
+/*#region smartphone screen*/
+
+@media screen and (max-width: 700px) {
+
+    .whatapp {
+        display: none;
+    }
+
+
+    .section-1 {
+        height: 391px;
+    }
+
+    .section-2 {
+        height: 1136px;
+    }
+
+    .box-img {
+        width: 79px;
+        height: 65px;
+        top: 73px;
+        right: 33px;
+        position: absolute;
+    }
+
+    .section-1-content-wrapper {
+        top: 182px;
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    h1 {
+        font-size: 33px;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    .section-1 p {
+        width: 283px;
+        display: inline-block;
+    }
+
+    .cards-wrapper {
+        text-align: center;
+    }
+
+    .card {
+        width: 90%;
+        height: 247px;
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .card:first-child {
+        margin-top: 44px;
+    }
+    
+    .card img {
+        width: 44px;
+        margin-top: 48px;
+    }
+
+    .card h1 {
+        color: var(--primary-background-color);
+        font-weight: 900;
+        font-size: 22px;
+        margin: 20px 0 5px 0;
+    }
+
+    .card p {
+        width: 255px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .left-div {
+        text-align: center;
+    }
+
+    .left-div-content-wrapper {
+        display: inline-block;
+        text-align: right;
+        width: 307px;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 32px;
+        margin-top: 84px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 9px;
+    }
+
+    .name-wrapper, .email-wrapper, .message-wrapper {
+        margin-top: 10px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+
+    input[type="text"], input[type="email"] {
+        background: white;
+        border-bottom: solid 3px var(--primary-background-color);
+        width: 307px;
+        height: 37px;
+    }
+
+    textarea {
+        background: white;
+        border-bottom: solid 3px var(--primary-background-color);
+        width: 307px;
+        height: 105px;
+    }
+
+    .button {
+        width: 307px;
+        height: 37px;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 18px;
+    }
+
+
+    .right-div {
+        height: 312px;
+        position: relative;
+    }
+
+    .map {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 86%;
+        height: 82%;
+    }
+
+    .linkedin-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    footer {
+        height: 138px;
+        box-sizing: border-box;
+    }
+
+    .circles-wrapper {
+        margin-top: 41px;
+    }
+
+    .circle {
+        width: 46px;
+        height: 46px;
+        margin: 0 9px;
+    }
+
+    .bottom-line {
+        height: 10px;
+    }
+
+}
+
+/*#endregion*/

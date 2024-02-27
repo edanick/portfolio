@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edan's Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/profile.png" type="image/x-icon">
+    <script src="./scripts/index.js" defer></script>
+</head>
+
+<body>
+
+    <header class="top-bar">
+        <a href="./index.html"><img class="logo" src="./images/logo.png" /></a>
+        <img class="hamburger" onclick="toggleMainNav()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" />
+        <nav id="mainNav">
+            <a onclick="section1.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })">Home</a>
+            <a onclick="section2.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })">About</a>
+            <a onclick="section3.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })">Projects</a>
+            <a onclick="section4.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' })">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="section1" class="section-1" style="background: #F2F2F2;">
+            <div>
+
+
+                <div class="center">
+                    <h1>Edan Matayev</h1>
+                    <p>
+                        Hi I'm Edan Matayev, a passionate web developer who desires to make a joyful user experiences.
+                        With
+                        expertise in HTML, CSS, and JavaScript,
+                        I create websites that users will enjoy using
+                    </p>
+                </div>
+
+
+            </div>
+            <div>
+                <img class="avatar" src="./images/profile.png" />
+            </div>
+        </section>
+
+        <section id="section2" class="section-1">
+            <div>
+                <img class="center avatar-2" src="./images/profile.png" />
+            </div>
+            <div>
+
+                <div class="center">
+                    <h1>About me</h1>
+                    <p>
+                        Full name: Edan Matayev <br> <br>
+                        Profession: Fullstack Web Developer <br> <br>
+                        Email: edanmatayev@gmail.com <br> <br>
+                        Phone: 058-460-8999 <br> <br>
+                        My main knowledge: <br> <br>
+
+                        <span id="know"> HTML 5 , CSS , SASS , Bootstrap , JavaScript , Typescript , React , NodeJS ,
+                            PHP , SQL ,
+                            MongoDB ,
+                            WordPress ...
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section3" style="background: #F2F2F2;">
+            <div id="container-gallery">
+                <div class="card">
+                    <div class="bg-image bg-image-1"></div>
+                    <h3>Coffee</h3>
+                    <p>Some promotion for a coffee brand.</p>
+                    <a class="button" style="margin-left: 8px; width: 50px;" href="./project.html?n=1">click</a>
+                </div>
+                <div class="card">
+                    <div class="bg-image bg-image-2"></div>
+                    <h3>Let us lead you forward</h3>
+                    <p>Recuritment form</p>
+                    <a class="button" style="margin-left: 8px; width: 50px;" href="./project.html?n=2">click</a>
+                </div>
+                <div class="card">
+                    <div class="bg-image bg-image-3"></div>
+                    <h3>Discover the world</h3>
+                    <p>Share us about your travel experience</p>
+                    <a class="button" style="margin-left: 8px; width: 50px;" href="./project.html?n=3">click</a>
+                </div>
+                <div class="card">
+                    <div class="bg-image bg-image-4"></div>
+                    <h3>Free counseling</h3>
+                    <p>Leave your phone number to get contacted by a professional</p>
+                    <a class="button" style="margin-left: 8px; width: 50px;" href="./project.html?n=4">click</a>
+                </div>
+                <div class="card">
+                    <div class="bg-image bg-image-5"></div>
+                    <h3>Think outside of the box</h3>
+                    <p>Leave your phone number to get contacted by a professional.</p>
+                    <a class="button" style="margin-left: 8px; width: 50px;" href="./project.html?n=5">click</a>
+                </div>
+                <div class="card">
+                    <div class="bg-image bg-image-6"></div>
+                    <h3>Here & Now</h3>
+                    <p>We wanted to make you enjoy from a selection of many gifts</p>
+                    <a class="button" style="margin-left: 8px; width: 50px;" href="./project.html?n=6">click</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4">
+
+
+            <div style="text-align: center;">
+                <h1>Contact</h1>
+                <input type="text" name="" placeholder="Name">
+                <input type="email" name="" id="" placeholder="E-Mail">
+                <input type="number" name="" id="" placeholder="Phone Number">
+                <br>
+                <input type="text" name="title" id="titleInput" placeholder="Title">
+                <br>
+                <textarea class="contact-text-area"></textarea>
+                <br>
+                <input type="submit" value="Send">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer style="background: #F2F2F2;">
+        Copyright © year by Edan | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
